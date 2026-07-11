@@ -55,8 +55,8 @@ li + li { margin-top: var(--space-2); }
 .primary-nav { position: absolute; inset: 100% 1rem auto; display: none; padding: var(--space-4); border: 1px solid var(--color-border); border-radius: 0 0 var(--radius-md) var(--radius-md); background: var(--color-surface); box-shadow: var(--shadow-standard); }
 .primary-nav.is-open { display: block; }
 .nav-list, .footer-links { display: flex; flex-direction: column; gap: var(--space-3); padding: 0; margin: 0; list-style: none; }
-.nav-link { position: relative; display: inline-flex; min-height: 2.5rem; align-items: center; color: var(--color-petroleum); font-weight: 700; text-decoration: none; }
-.nav-link.active::after, .nav-link[aria-current="page"]::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0.15rem; height: 2px; background: var(--color-copper); }
+.nav-link { position: relative; display: inline-flex; min-height: 2.75rem; align-items: center; padding-inline: var(--space-1); color: var(--color-petroleum); font-weight: 700; line-height: 1; text-decoration: none; }
+.nav-link.active::after, .nav-link[aria-current="page"]::after { content: ""; position: absolute; left: var(--space-1); right: var(--space-1); bottom: 0.2rem; height: 2px; background: var(--color-copper); pointer-events: none; }
 .button { display: inline-flex; align-items: center; justify-content: center; min-height: 2.75rem; padding: 0.72rem 1.05rem; border: 1px solid var(--color-petroleum); border-radius: var(--radius-sm); color: #fff; background: var(--color-petroleum); font-weight: 800; text-decoration: none; }
 .button:hover { color: #fff; background: var(--color-navy); }
 .button-quiet { color: var(--color-petroleum); background: transparent; }
