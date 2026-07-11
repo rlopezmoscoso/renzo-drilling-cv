@@ -371,23 +371,24 @@ The visual concept shall communicate:
 
 ### 9.1 Visual Style
 
-- Dark technical theme
-- Graphite and petroleum-blue surfaces
-- High-contrast text
-- Restrained industrial accent color
-- Clean grid
-- Strong spacing hierarchy
-- Minimal decorative effects
+- Executive Technical light visual system
+- White and light-gray surfaces
+- Navy headings and executive sections
+- Petroleum-blue navigation, links, and technical accents
+- Copper metric, period, and current-role accents
+- Clean alignment and controlled whitespace
+- Restrained shadows with fewer elevated cards
+- No dark full-page background
 - No generic recruitment-template appearance
 
 ### 9.2 Suggested Visual Elements
 
-- Abstract well-path lines
-- Technical grid patterns
-- Timeline components
-- Metric cards
-- Competency cards
-- Thin engineering-style separators
+- Executive metrics panel with independent operational facts
+- Clean timeline components
+- Editorial professional-impact layouts
+- Compact rectangular tags
+- Thin executive separators and borders
+- No well-path graphic, drilling schematic, pressure graph, rig-capacity diagram, or decorative technical plot
 
 ### 9.3 Responsive Design
 
