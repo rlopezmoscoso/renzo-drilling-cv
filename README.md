@@ -192,4 +192,4 @@ Deployment instructions will be added after the initial website implementation i
 
 ## Status
 
-Current status: documentation and project planning.
+Current status: two-page static Executive Technical website implemented for GitHub Pages-compatible deployment.
