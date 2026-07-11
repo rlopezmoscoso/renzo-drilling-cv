@@ -162,7 +162,7 @@ Display concise metrics:
 - 15+ years of experience
 - 30+ wells managed during HPHT supervisory assignments
 - Wells up to approximately 22,500 ft TD
-- Experience with 3000 HP rigs
+- Experience with 3,000 HP rigs
 - Experience with 15K psi BOP systems
 - 7+ contracts managed as Contract Holder
 
@@ -249,7 +249,7 @@ Content:
 - Development wells in the SRB-MMR Block
 - Support to exploratory well IÑAU-X3D
 - Assigned wells: PLC-6, PLC-7, BQN-19NH, ECD-8, ECD-9D, YPC-X1D, YPC-43
-- Contract Holder for a 2000 HP drilling rig and critical drilling services
+- Contract Holder for a 2,000 HP drilling rig and critical drilling services
 - Basis of Design
 - Drilling Programs
 - Risk Assessments
@@ -269,7 +269,7 @@ Content:
 - Snubbing, workover, coiled tubing, wireline, slickline, and rigless operations
 - Wells with more than 4,000 psi wellhead pressure
 - Margarita Gas Field
-- 2000 HP and 3000 HP rigs
+- 2,000 HP and 3,000 HP rigs
 - Velocity string installations
 - Stimulation campaigns
 - Milling and production-restoration interventions
@@ -287,7 +287,7 @@ Content:
 - 30+ wells
 - HPHT exploration wells
 - Wells up to approximately 22,500 ft TD
-- 3000 HP rigs
+- 3,000 HP rigs
 - 15K psi BOP systems
 - ProNova real-time monitoring
 - CUR-1008D directional-horizontal well
