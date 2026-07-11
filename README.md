@@ -168,10 +168,11 @@ Recommended sequence:
 
 ### Milestone 5 — Deployment
 
-- Add downloadable CV
 - Configure GitHub Pages
 - Verify public URLs
 - Complete final documentation
+
+The current approved scope does not include a downloadable CV, downloadable PDF, CV download link, or CV placeholder control.
 
 ## Content Policy
 

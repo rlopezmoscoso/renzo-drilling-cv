@@ -76,7 +76,6 @@ The header shall include:
 - Professional name or brand
 - Home navigation link
 - Experience navigation link
-- Download CV button
 - Mobile navigation control
 
 ### 7.2 Hero Section
@@ -90,10 +89,9 @@ Display:
 - Santa Cruz, Bolivia
 - Availability for international opportunities
 
-Primary actions:
+Primary action:
 
 - View Experience
-- Download CV
 
 ### 7.3 Professional Profile
 
@@ -208,7 +206,6 @@ Include:
 - LinkedIn
 - Santa Cruz, Bolivia
 - Availability for international assignments
-- Download CV action
 
 Do not display professional-reference telephone numbers.
 
@@ -221,6 +218,11 @@ Include:
 - Current year
 - Main navigation links
 - LinkedIn link
+
+
+### 7.10 Downloadable CV Scope
+
+The current approved scope does not include a downloadable CV, downloadable PDF, CV download link, or CV placeholder control.
 
 ## 8. Experience Page Requirements
 
@@ -458,7 +460,6 @@ The first release is accepted when:
 - The mobile menu works
 - The layout is responsive
 - The content accurately represents the approved professional profile
-- The CV download link works when the PDF is added
 - There are no broken links
 - There are no JavaScript console errors
 - The HTML uses semantic structure
