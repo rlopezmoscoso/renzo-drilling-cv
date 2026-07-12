@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" role="img">
+  <title>Technical drilling and directional well blueprint</title>
+  <desc>Original line illustration showing a land drilling rig, well construction, casing strings, geological formations, and a directional J-profile well.</desc>
+  <style>
+    .grid{stroke:#d3dde1;stroke-width:1;opacity:.42}.minor{stroke:#d3dde1;stroke-width:.7;opacity:.22}.navy{stroke:#102a3a}.petrol{stroke:#1f566b}.muted{stroke:#5b6b73}.copper{stroke:#b66a32}.fill-none{fill:none}.soft{opacity:.55}.thin{stroke-width:1.5}.med{stroke-width:2.5}.heavy{stroke-width:4}.band{fill:#1f566b;opacity:.045}.band-alt{fill:#b66a32;opacity:.04}.note{fill:#5b6b73;opacity:.55}
+  </style>
+  <g id="technical-grid" class="fill-none" stroke-linecap="round" stroke-linejoin="round">
+    <path class="minor" d="M40 40H760M40 80H760M40 120H760M40 160H760M40 200H760M40 240H760M40 280H760M40 320H760M40 360H760M40 400H760M40 440H760M40 480H760M40 520H760M40 560H760M40 600H760"/>
+    <path class="minor" d="M80 24V616M120 24V616M160 24V616M200 24V616M240 24V616M280 24V616M320 24V616M360 24V616M400 24V616M440 24V616M480 24V616M520 24V616M560 24V616M600 24V616M640 24V616M680 24V616M720 24V616"/>
+    <path class="grid" d="M40 160H760M40 320H760M40 480H760M200 24V616M400 24V616M600 24V616"/>
+    <path class="grid" d="M40 24H760V616H40Z"/>
+  </g>
+  <g id="formation-bands">
+    <path class="band" d="M48 258c72-14 132 16 206 4 92-15 150-26 246-5 96 21 166-5 252 4v62H48Z"/>
+    <path class="band-alt" d="M48 344c85 12 143-10 226-5 81 5 139 28 224 9 93-21 172-14 254 8v70H48Z"/>
+    <path class="band" d="M48 456c70-8 136-21 221-1 87 20 150-2 228-8 91-7 166 16 255 5v86H48Z"/>
+    <path class="band-alt" d="M48 548c109 14 195-10 290 1 104 12 174 30 264 4 55-16 96-6 150 5v58H48Z"/>
+    <path class="muted thin fill-none soft" d="M56 258c72-14 132 16 206 4 92-15 150-26 246-5 96 21 166-5 244 4M56 344c85 12 143-10 226-5 81 5 139 28 224 9 93-21 172-14 246 8M56 456c70-8 136-21 221-1 87 20 150-2 228-8 91-7 166 16 247 5M56 548c109 14 195-10 290 1 104 12 174 30 264 4 55-16 96-6 142 5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="rig-and-surface" class="fill-none" stroke-linecap="round" stroke-linejoin="round">
+    <path class="navy heavy" d="M154 221h188"/>
+    <path class="navy med" d="M178 221 258 64l82 157M210 221 258 64M306 221 258 64"/>
+    <path class="petrol thin" d="M198 184h120M212 154h92M226 124h64M240 94h36M194 189l126-35M212 158l92-34M226 128l64-34M320 189l-126-35M304 158l-92-34M290 128l-64-34"/>
+    <path class="navy med" d="M258 64v196"/>
+    <path class="copper med" d="M247 111h22M251 260h14"/>
+    <path class="muted thin" d="M126 238h262M154 238v22M342 238v22M186 260h124"/>
+    <path class="navy med" d="M232 260h52v18h-52zM222 278h72v18h-72zM238 296h40v18h-40z"/>
+    <path class="petrol thin" d="M210 314h96M226 328h64M238 342h40"/>
+  </g>
+  <g id="well-construction" class="fill-none" stroke-linecap="round" stroke-linejoin="round">
+    <path class="navy heavy" d="M258 314v188c0 82 72 116 178 116h184"/>
+    <path class="petrol med" d="M258 314v183c0 46 24 80 71 99 32 13 71 17 113 17h178"/>
+    <path class="muted thin" d="M234 314v160M282 314v160M222 474h72"/>
+    <path class="muted thin" d="M242 314v104M274 314v104M234 418h48"/>
+    <path class="muted thin" d="M250 314v62M266 314v62M246 376h24"/>
+    <path class="copper med" d="M289 496l-18 18M322 579l-12 22"/>
+    <path class="navy thin" d="M620 606l28 12-28 12"/>
+    <circle class="petrol thin" cx="258" cy="314" r="8"/>
+  </g>
+  <g id="engineering-reference-lines" class="fill-none" stroke-linecap="round" stroke-linejoin="round">
+    <path class="muted thin soft" d="M420 118h210M420 142h150M420 166h185M426 112v60M642 112v60"/>
+    <path class="petrol thin soft" d="M536 110l-28 62M574 110l-28 62"/>
+    <path class="copper thin" d="M672 318h58M701 289v58M684 301l34 34M718 301l-34 34"/>
+    <path class="muted thin soft" d="M594 430h112M650 374v112M612 392l76 76M688 392l-76 76"/>
+    <path class="note" d="M420 198h96v4h-96zM420 214h132v4H420zM420 230h72v4h-72z"/>
+  </g>
+</svg>
