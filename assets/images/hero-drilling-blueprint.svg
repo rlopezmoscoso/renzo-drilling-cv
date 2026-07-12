@@ -1,47 +1,92 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" role="img">
-  <title>Technical drilling and directional well blueprint</title>
-  <desc>Original line illustration showing a land drilling rig, well construction, casing strings, geological formations, and a directional J-profile well.</desc>
-  <style>
-    .grid{stroke:#d3dde1;stroke-width:1;opacity:.42}.minor{stroke:#d3dde1;stroke-width:.7;opacity:.22}.navy{stroke:#102a3a}.petrol{stroke:#1f566b}.muted{stroke:#5b6b73}.copper{stroke:#b66a32}.fill-none{fill:none}.soft{opacity:.55}.thin{stroke-width:1.5}.med{stroke-width:2.5}.heavy{stroke-width:4}.band{fill:#1f566b;opacity:.045}.band-alt{fill:#b66a32;opacity:.04}.note{fill:#5b6b73;opacity:.55}
-  </style>
-  <g id="technical-grid" class="fill-none" stroke-linecap="round" stroke-linejoin="round">
-    <path class="minor" d="M40 40H760M40 80H760M40 120H760M40 160H760M40 200H760M40 240H760M40 280H760M40 320H760M40 360H760M40 400H760M40 440H760M40 480H760M40 520H760M40 560H760M40 600H760"/>
-    <path class="minor" d="M80 24V616M120 24V616M160 24V616M200 24V616M240 24V616M280 24V616M320 24V616M360 24V616M400 24V616M440 24V616M480 24V616M520 24V616M560 24V616M600 24V616M640 24V616M680 24V616M720 24V616"/>
-    <path class="grid" d="M40 160H760M40 320H760M40 480H760M200 24V616M400 24V616M600 24V616"/>
-    <path class="grid" d="M40 24H760V616H40Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="blueprint-title blueprint-desc">
+  <title id="blueprint-title">Technical drilling rig, BOP, casing program, and directional J-profile well blueprint</title>
+  <desc id="blueprint-desc">Original engineering-style SVG illustration showing a detailed land drilling rig connected to a wellhead and BOP stack, nested casing strings, seven geological boundaries, and a vertical-to-J-profile directional wellbore with gridlines and restrained construction annotations.</desc>
+  <defs>
+    <style>
+      .grid{stroke:#5f7480;stroke-width:1;opacity:.12;fill:none}.grid-strong{stroke:#7f929b;stroke-width:1.2;opacity:.22;fill:none}.construct{stroke:#8da0a8;stroke-width:1.2;opacity:.36;fill:none;stroke-dasharray:9 10}.line{stroke:#8fa4ad;stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round}.fine{stroke:#738a95;stroke-width:1.35;fill:none;stroke-linecap:round;stroke-linejoin:round;opacity:.78}.heavy{stroke:#d8e2e5;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}.accent{stroke:#b9814b;stroke-width:2.6;fill:none;stroke-linecap:round;stroke-linejoin:round}.fill-dark{fill:#132a36;opacity:.34;stroke:#8fa4ad;stroke-width:2}.fill-light{fill:#d8e2e5;opacity:.08;stroke:#8fa4ad;stroke-width:1.8}.geo{stroke:#607783;stroke-width:2.1;fill:none;stroke-linecap:round;stroke-linejoin:round;opacity:.64}.hatch{stroke:#607783;stroke-width:1;opacity:.25}.text{font-family:Arial,Helvetica,sans-serif;font-size:19px;letter-spacing:.08em;fill:#b8c6cb;opacity:.72}.small{font-family:Arial,Helvetica,sans-serif;font-size:14px;letter-spacing:.08em;fill:#a9bbc2;opacity:.62}.tick{stroke:#b8c6cb;stroke-width:1.4;opacity:.55}.cement{stroke:#b9814b;stroke-width:1.15;opacity:.45;fill:none;stroke-dasharray:4 7}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b9814b" opacity=".85"/></marker>
+  </defs>
+
+  <g id="technical-grid">
+    <path class="grid" d="M80 80H1520M80 140H1520M80 200H1520M80 260H1520M80 320H1520M80 380H1520M80 440H1520M80 500H1520M80 560H1520M80 620H1520M80 680H1520M80 740H1520M80 800H1520"/>
+    <path class="grid" d="M100 54V846M180 54V846M260 54V846M340 54V846M420 54V846M500 54V846M580 54V846M660 54V846M740 54V846M820 54V846M900 54V846M980 54V846M1060 54V846M1140 54V846M1220 54V846M1300 54V846M1380 54V846M1460 54V846M1540 54V846"/>
+    <path class="grid-strong" d="M80 320H1520M420 54V846M1540 54V846"/>
+    <path class="construct" d="M420 70V842M100 322H1510"/>
+    <g id="depth-ticks">
+      <path class="tick" d="M82 380h34M82 440h22M82 500h34M82 560h22M82 620h34M82 680h22M82 740h34M82 800h22"/>
+      <text class="small" x="94" y="304">SURFACE REFERENCE</text>
+      <text class="small" x="116" y="505" transform="rotate(-90 116 505)">DEPTH INDEX</text>
+    </g>
   </g>
-  <g id="formation-bands">
-    <path class="band" d="M48 258c72-14 132 16 206 4 92-15 150-26 246-5 96 21 166-5 252 4v62H48Z"/>
-    <path class="band-alt" d="M48 344c85 12 143-10 226-5 81 5 139 28 224 9 93-21 172-14 254 8v70H48Z"/>
-    <path class="band" d="M48 456c70-8 136-21 221-1 87 20 150-2 228-8 91-7 166 16 255 5v86H48Z"/>
-    <path class="band-alt" d="M48 548c109 14 195-10 290 1 104 12 174 30 264 4 55-16 96-6 150 5v58H48Z"/>
-    <path class="muted thin fill-none soft" d="M56 258c72-14 132 16 206 4 92-15 150-26 246-5 96 21 166-5 244 4M56 344c85 12 143-10 226-5 81 5 139 28 224 9 93-21 172-14 246 8M56 456c70-8 136-21 221-1 87 20 150-2 228-8 91-7 166 16 247 5M56 548c109 14 195-10 290 1 104 12 174 30 264 4 55-16 96-6 142 5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g id="geological-section">
+    <path class="geo" d="M90 368 C210 348 315 386 445 365 S690 334 835 360 S1090 405 1235 378 S1405 338 1510 358"/>
+    <path class="geo" d="M88 430 C240 452 330 408 474 433 S700 484 850 446 S1046 415 1195 442 S1395 490 1512 454"/>
+    <path class="geo" d="M88 502 C205 480 350 512 483 498 S700 450 835 495 S1065 554 1210 520 S1390 478 1512 508"/>
+    <path class="geo" d="M90 574 C215 610 355 546 500 575 S725 640 875 592 S1080 550 1230 590 S1410 648 1510 612"/>
+    <path class="geo" d="M88 646 C210 622 340 660 485 650 S725 604 880 650 S1075 706 1235 672 S1390 626 1512 662"/>
+    <path class="geo" d="M88 718 C225 748 358 698 515 722 S735 780 902 735 S1095 690 1245 728 S1405 778 1512 744"/>
+    <path class="geo" d="M88 790 C238 764 372 816 540 792 S760 744 935 786 S1115 836 1280 805 S1415 770 1512 802"/>
+    <g id="formation-hatching">
+      <path class="hatch" d="M136 392l42-28M245 398l50-31M620 381l44-29M1035 400l58-34M1330 385l48-30M160 462l46 24M372 442l58 26M770 470l44 25M1110 452l58 30M1430 474l42 22M145 538l55-25M440 526l46-27M700 516l55-24M1016 548l50-28M1325 532l62-30M208 624l50 28M520 606l42 26M805 615l54 30M1160 610l44 28M1430 634l54 30M150 690l58-30M398 690l44-24M670 682l54-32M965 704l52-29M1280 700l60-34M245 766l46 28M585 754l44 26M850 766l58 32M1160 774l46 29M1405 772l54 31"/>
+      <path class="fine" d="M1268 424c28 75 20 151-20 230M1282 421c44 83 37 177-18 286" opacity=".35"/>
+      <path class="construct" d="M1238 455l78 236"/>
+    </g>
   </g>
-  <g id="rig-and-surface" class="fill-none" stroke-linecap="round" stroke-linejoin="round">
-    <path class="navy heavy" d="M154 221h188"/>
-    <path class="navy med" d="M178 221 258 64l82 157M210 221 258 64M306 221 258 64"/>
-    <path class="petrol thin" d="M198 184h120M212 154h92M226 124h64M240 94h36M194 189l126-35M212 158l92-34M226 128l64-34M320 189l-126-35M304 158l-92-34M290 128l-64-34"/>
-    <path class="navy med" d="M258 64v196"/>
-    <path class="copper med" d="M247 111h22M251 260h14"/>
-    <path class="muted thin" d="M126 238h262M154 238v22M342 238v22M186 260h124"/>
-    <path class="navy med" d="M232 260h52v18h-52zM222 278h72v18h-72zM238 296h40v18h-40z"/>
-    <path class="petrol thin" d="M210 314h96M226 328h64M238 342h40"/>
+
+  <g id="land-rig" transform="translate(0 0)">
+    <path class="heavy" d="M300 304H548"/>
+    <path class="line" d="M326 304L420 74L514 304M360 304L420 74L480 304M348 258H492M365 218H475M382 176H458M398 136H442"/>
+    <path class="fine" d="M326 304l166-46M514 304l-166-46M348 258l127-40M492 258l-127-40M365 218l93-42M475 218l-93-42M382 176l60-40M458 176l-60-40"/>
+    <path class="line" d="M392 86h56M380 98h80M385 108h70"/>
+    <circle class="fill-light" cx="405" cy="102" r="7"/><circle class="fill-light" cx="435" cy="102" r="7"/>
+    <path class="accent" d="M420 106V326"/>
+    <path class="line" d="M372 190h96v18h-96zM286 304h268v34H286zM315 338h210v34H315zM270 372h300M300 372l-42 42M540 372l42 42M340 372v42M500 372v42M256 414h330"/>
+    <path class="fine" d="M552 306h80v32h-80zM568 292h46M580 338v34M612 338v34M294 338l-54 54M310 350l-54 54M604 338h78M612 354h58M235 414h385"/>
+    <path class="fine" d="M260 405h78M270 394h78M280 383h78"/>
+    <text class="small" x="548" y="284">DRAWWORKS / FLOOR EQUIPMENT</text>
+    <text class="small" x="456" y="124">CROWN BLOCK ZONE</text>
+    <text class="small" x="482" y="202">MONKEY BOARD</text>
   </g>
-  <g id="well-construction" class="fill-none" stroke-linecap="round" stroke-linejoin="round">
-    <path class="navy heavy" d="M258 314v188c0 82 72 116 178 116h184"/>
-    <path class="petrol med" d="M258 314v183c0 46 24 80 71 99 32 13 71 17 113 17h178"/>
-    <path class="muted thin" d="M234 314v160M282 314v160M222 474h72"/>
-    <path class="muted thin" d="M242 314v104M274 314v104M234 418h48"/>
-    <path class="muted thin" d="M250 314v62M266 314v62M246 376h24"/>
-    <path class="copper med" d="M289 496l-18 18M322 579l-12 22"/>
-    <path class="navy thin" d="M620 606l28 12-28 12"/>
-    <circle class="petrol thin" cx="258" cy="314" r="8"/>
+
+  <g id="wellhead-bop">
+    <path class="heavy" d="M420 304V360"/>
+    <path class="line" d="M376 326h88v18h-88zM386 344h68v16h-68zM364 360h112v20H364zM378 380h84v24h-84zM358 404h124v24H358zM372 428h96v24h-96zM354 452h132v24H354zM382 476h76v22h-76"/>
+    <path class="fine" d="M348 370h-62M492 370h62M338 416h-72M502 416h72M286 360v20M554 360v20M266 406v20M574 406v20M356 388h128M352 440h136M368 464h104"/>
+    <path class="accent" d="M286 370h-45m313 0h45M266 416h-55m363 0h55"/>
+    <text class="small" x="604" y="374">CHOKE / KILL OUTLETS</text>
+    <text class="small" x="508" y="459">ANNULAR + RAM PREVENTERS</text>
   </g>
-  <g id="engineering-reference-lines" class="fill-none" stroke-linecap="round" stroke-linejoin="round">
-    <path class="muted thin soft" d="M420 118h210M420 142h150M420 166h185M426 112v60M642 112v60"/>
-    <path class="petrol thin soft" d="M536 110l-28 62M574 110l-28 62"/>
-    <path class="copper thin" d="M672 318h58M701 289v58M684 301l34 34M718 301l-34 34"/>
-    <path class="muted thin soft" d="M594 430h112M650 374v112M612 392l76 76M688 392l-76 76"/>
-    <path class="note" d="M420 198h96v4h-96zM420 214h132v4H420zM420 230h72v4h-72z"/>
+
+  <g id="casing-program">
+    <path class="line" d="M382 498V575M458 498V575"/>
+    <path class="line" d="M392 498V650M448 498V650"/>
+    <path class="line" d="M402 498V728M438 498V728"/>
+    <path class="line" d="M412 498V794M428 498V794"/>
+    <path class="accent" d="M382 575l38 22l38-22M392 650l28 18l28-18M402 728l18 14l18-14M412 794l8 10l8-10"/>
+    <path class="cement" d="M370 510c18 15 18 31 0 46s-18 31 0 46M470 510c-18 15-18 31 0 46s18 31 0 46M382 610c16 13 16 27 0 40M458 610c-16 13-16 27 0 40M394 674c12 18 12 36 0 54M446 674c-12 18-12 36 0 54"/>
+    <path class="construct" d="M330 575h180M342 650h160M356 728h132M370 794h100"/>
+    <text class="small" x="188" y="562">CONDUCTOR SHOE</text>
+    <text class="small" x="190" y="640">SURFACE CASING SHOE</text>
+    <text class="small" x="158" y="718">INTERMEDIATE CASING SHOE</text>
+    <text class="small" x="174" y="786">PRODUCTION LINER SHOE</text>
+  </g>
+
+  <g id="directional-wellbore">
+    <path class="heavy" d="M420 498V622 C420 690 456 740 532 762 C640 794 807 776 980 748 C1160 719 1322 718 1464 745"/>
+    <path class="accent" d="M420 618 C426 690 468 735 532 758 C640 790 807 772 980 744 C1160 715 1322 714 1464 741" marker-end="url(#arrow)"/>
+    <path class="fine" d="M405 618h30M422 654l34-10M452 704l32-20M514 752l18-32M650 778l-6-36M820 768l-12-34M1010 742l-10-32M1220 728v-33M1395 736l8-30"/>
+    <path class="construct" d="M420 622h190M532 762V612M1464 745V672"/>
+    <text class="small" x="446" y="612">KICKOFF REFERENCE</text>
+    <text class="small" x="1010" y="704">J-PROFILE DIRECTIONAL SECTION</text>
+  </g>
+
+  <g id="annotations">
+    <path class="construct" d="M650 150h260M650 150v82M1260 158h210M1470 158v112"/>
+    <text class="text" x="650" y="140">ORIGINAL WELL-CONSTRUCTION BLUEPRINT</text>
+    <text class="small" x="650" y="172">RIG • WELL CONTROL • CASING • DIRECTIONAL TRAJECTORY</text>
+    <text class="small" x="1260" y="148">SCHEMATIC ENGINEERING VIEW</text>
+    <path class="fine" d="M700 210h120m-120 18h190m-190 18h145M1260 205h90m-90 18h150m-150 18h112"/>
   </g>
 </svg>
