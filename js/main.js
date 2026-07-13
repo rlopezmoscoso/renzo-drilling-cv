@@ -2,9 +2,11 @@
   var navToggle = document.querySelector('.nav-toggle');
   var primaryNav = document.querySelector('#primary-navigation');
   var siteHeader = document.querySelector('.site-header');
+  var homeMain = document.querySelector('.home-main');
   var yearElements = document.querySelectorAll('[data-current-year]');
   var desktopQuery = window.matchMedia('(min-width: 48rem)');
   var reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+  var motionAllowed = homeMain && !reducedMotionQuery.matches;
 
   yearElements.forEach(function (element) {
     element.textContent = new Date().getFullYear();
@@ -19,12 +21,7 @@
   function initializeHeroEntrance() {
     var heroElements = document.querySelectorAll('.home-main [data-hero-entrance]');
 
-    if (!heroElements.length) {
-      return;
-    }
-
-    if (reducedMotionQuery.matches) {
-      setVisible(heroElements);
+    if (!heroElements.length || !motionAllowed) {
       return;
     }
 
@@ -45,7 +42,11 @@
       element.style.setProperty('--reveal-delay', (Number.isNaN(delay) ? 0 : delay) + 'ms');
     });
 
-    if (reducedMotionQuery.matches || !('IntersectionObserver' in window)) {
+    if (!motionAllowed || reducedMotionQuery.matches) {
+      return;
+    }
+
+    if (!('IntersectionObserver' in window)) {
       setVisible(revealElements);
       return;
     }
@@ -108,6 +109,10 @@
     }
     navToggle.setAttribute('aria-expanded', 'true');
     primaryNav.classList.add('is-open');
+  }
+
+  if (motionAllowed) {
+    homeMain.classList.add('motion-ready');
   }
 
   initializeHeroEntrance();
