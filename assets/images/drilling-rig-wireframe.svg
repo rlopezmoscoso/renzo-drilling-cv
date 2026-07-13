@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 820" role="img" aria-labelledby="rig-title rig-desc">
+  <title id="rig-title">Drilling rig wireframe</title>
+  <desc id="rig-desc">Restrained technical wireframe illustration of a land drilling rig mast, substructure, rig floor, wellhead and drill line.</desc>
+  <defs><style>.s{fill:none;stroke:#5b7683;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}.m{fill:none;stroke:#8298a2;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;opacity:.76}.c{fill:none;stroke:#bb7131;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;opacity:.8}.f{fill:#5b7683;opacity:.08;stroke:#5b7683;stroke-width:4}</style></defs>
+  <path class="s" d="M94 690 210 74 326 690M142 690 210 74 278 690M116 566h188M136 466h148M156 356h108M176 246h68"/>
+  <path class="m" d="M94 690h232M54 738h312M92 738l54-48M328 738l-54-48M140 738v42M280 738v42M108 780h204M210 74v628M126 616l168-118M126 520l168-118M148 416l124-88M170 312l80-58"/>
+  <path class="f" d="M84 690h252v48H84zM156 622h108v68H156z"/>
+  <path class="c" d="M210 110c58 72 68 154 30 246-32 76-30 172 8 286"/>
+  <path class="m" d="M184 738v-86h52v86M172 652h76M190 630h40M194 780v-42M226 780v-42"/>
+</svg>

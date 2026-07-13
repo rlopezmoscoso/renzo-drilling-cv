@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 820" role="img" aria-labelledby="bha-title bha-desc">
+  <title id="bha-title">Bottom-hole assembly wireframe</title>
+  <desc id="bha-desc">Vertical technical wireframe of bottom-hole assembly components, stabilizers, drill collars and bit.</desc>
+  <defs><style>.s{fill:none;stroke:#5b7683;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.m{fill:none;stroke:#8298a2;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;opacity:.72}.c{fill:none;stroke:#bb7131;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;opacity:.74}</style></defs>
+  <path class="s" d="M60 32v756M42 64h36M42 122h36M36 180h48M42 238h36M30 306h60M42 374h36M36 442h48M42 510h36M30 590h60M46 656h28M38 718h44M60 788 36 748M60 788l24-40"/>
+  <path class="m" d="M48 64v58M72 64v58M48 180v58M72 180v58M44 306v68M76 306v68M48 442v68M72 442v68M44 590v66M76 590v66"/>
+  <path class="c" d="M46 718c18 12 28 12 46 0M40 748c12 10 28 18 40 40"/>
+</svg>
