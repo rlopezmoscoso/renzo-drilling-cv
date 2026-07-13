@@ -35,6 +35,71 @@
     });
   }
 
+
+  function initializeHeroTypewriter() {
+    var typewriter = document.querySelector('.home-main [data-typewriter]');
+
+    if (!typewriter) {
+      return;
+    }
+
+    var source = typewriter.querySelector('.visually-hidden');
+    var visibleText = typewriter.querySelector('.hero-typewriter-text');
+    var actionRow = typewriter.parentElement ? typewriter.parentElement.querySelector('.action-row') : null;
+
+    if (!source || !visibleText || !actionRow) {
+      return;
+    }
+
+    var fullText = source.textContent.trim();
+
+    if (!fullText) {
+      return;
+    }
+
+    if (reducedMotionQuery.matches) {
+      visibleText.textContent = fullText;
+      return;
+    }
+
+    var characterIndex = 0;
+    var typingDelay = 380;
+    var characterDelay = 24;
+    var cursorHold = 450;
+
+    typewriter.classList.add('typewriter-ready', 'typing-active');
+    actionRow.classList.add('is-typewriter-pending');
+    visibleText.textContent = '';
+
+    function revealButtons() {
+      actionRow.classList.remove('is-typewriter-pending');
+      actionRow.classList.add('is-typewriter-visible');
+    }
+
+    function finishTyping() {
+      typewriter.classList.remove('typing-active');
+      typewriter.classList.add('typing-complete');
+      revealButtons();
+
+      window.setTimeout(function () {
+        typewriter.classList.add('is-cursor-hidden');
+      }, cursorHold);
+    }
+
+    function typeNextCharacter() {
+      if (characterIndex >= fullText.length) {
+        finishTyping();
+        return;
+      }
+
+      visibleText.textContent += fullText.charAt(characterIndex);
+      characterIndex += 1;
+      window.setTimeout(typeNextCharacter, characterDelay);
+    }
+
+    window.setTimeout(typeNextCharacter, typingDelay);
+  }
+
   function initializeReveals() {
     var revealElements = document.querySelectorAll('.home-main [data-reveal]');
 
@@ -167,6 +232,7 @@
   }
 
   initializeHeroEntrance();
+  initializeHeroTypewriter();
   initializeReveals();
   initializeMetricsSequence();
   initializeHeaderScrollState();

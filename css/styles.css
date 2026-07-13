@@ -180,6 +180,63 @@ ul { margin-block: 0; padding-left: 1.15rem; }
 .profile-card-details dd { margin: 0; color: var(--color-navy); font-family: var(--font-body); font-size: 0.9rem; font-weight: 700; line-height: 1.4; }
 .profile-card-links { display: flex; flex-wrap: wrap; gap: 0.9rem; padding-top: var(--space-1); font-family: var(--font-body); }
 .profile-card-links a { font-size: 0.9rem; font-weight: 700; }
+
+.home-main .hero-typewriter {
+  position: relative;
+}
+.home-main .hero-typewriter-measure {
+  display: block;
+}
+.home-main .hero-typewriter-visible {
+  display: none;
+}
+.home-main .hero-typewriter.typewriter-ready .hero-typewriter-measure {
+  color: transparent;
+  user-select: none;
+}
+.home-main .hero-typewriter.typewriter-ready .hero-typewriter-visible {
+  position: absolute;
+  inset: 0 auto auto 0;
+  display: block;
+  width: 100%;
+  color: inherit;
+}
+.home-main .hero-typewriter.typing-active .hero-typewriter-cursor,
+.home-main .hero-typewriter.typing-complete .hero-typewriter-cursor {
+  display: inline-block;
+  width: 1px;
+  height: 1em;
+  margin-left: 0.08em;
+  vertical-align: -0.12em;
+  background: var(--color-petroleum);
+}
+.home-main .hero-typewriter.typing-active .hero-typewriter-cursor {
+  animation: hero-caret-blink 780ms steps(1, end) infinite;
+}
+.home-main .hero-typewriter.typing-complete .hero-typewriter-cursor {
+  opacity: 0;
+  transition: opacity 220ms ease;
+}
+.home-main .hero-typewriter.is-cursor-hidden .hero-typewriter-cursor {
+  display: none;
+}
+.home-main .action-row.is-typewriter-pending .button {
+  opacity: 0;
+  transform: translateY(8px);
+}
+.home-main .action-row.is-typewriter-visible .button {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 480ms cubic-bezier(0.22, 1, 0.36, 1), transform 480ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.home-main .action-row.is-typewriter-visible .button:nth-child(2) {
+  transition-delay: 80ms;
+}
+@keyframes hero-caret-blink {
+  0%, 45% { opacity: 1; }
+  55%, 100% { opacity: 0; }
+}
+
 .hero-facts { display: grid; gap: var(--space-3); margin: var(--space-4) 0 0; }
 .hero-facts div { padding-left: var(--space-3); border-left: 3px solid var(--color-copper); }
 .hero-facts dt { color: var(--color-muted); font-family: var(--font-mono); font-size: 0.74rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
@@ -562,4 +619,4 @@ ul { margin-block: 0; padding-left: 1.15rem; }
   .home-main.motion-ready .executive-metrics [data-metric-sequence="right-3"] { --metric-sequence-delay: 2700ms; }
 }
 
-@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto; transition-duration: 0.01ms; animation-duration: 0.01ms; animation-iteration-count: 1; } .brand-role { transition: none; } .home-main [data-hero-entrance], .home-main [data-reveal] { opacity: 1; transform: none; transition: none; } .button:hover, .home-main .expertise-card:hover, .home-main .tool-panel:hover, .home-main .framework-card:hover, .home-main .achievement-list li:hover, .home-main .metrics-list div:hover::before { transform: none; } .home-main .metrics-list::before { transform: none; transition: none; } .home-main .executive-metrics [data-metric-sequence] { opacity: 1; transform: none; transition: none; } .site-header.is-scrolled .header-layout { min-height: 4rem; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto; transition-duration: 0.01ms; animation-duration: 0.01ms; animation-iteration-count: 1; } .brand-role { transition: none; } .home-main .hero-typewriter-cursor { display: none; animation: none; } .home-main .action-row.is-typewriter-pending .button { opacity: 1; transform: none; } .home-main [data-hero-entrance], .home-main [data-reveal] { opacity: 1; transform: none; transition: none; } .button:hover, .home-main .expertise-card:hover, .home-main .tool-panel:hover, .home-main .framework-card:hover, .home-main .achievement-list li:hover, .home-main .metrics-list div:hover::before { transform: none; } .home-main .metrics-list::before { transform: none; transition: none; } .home-main .executive-metrics [data-metric-sequence] { opacity: 1; transform: none; transition: none; } .site-header.is-scrolled .header-layout { min-height: 4rem; } }
