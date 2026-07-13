@@ -132,12 +132,15 @@
 
     updateHeaderAndProgress();
 
-    window.addEventListener('scroll', function () {
+    function scheduleHeaderUpdate() {
       if (!ticking) {
         window.requestAnimationFrame(updateHeaderAndProgress);
         ticking = true;
       }
-    }, { passive: true });
+    }
+
+    window.addEventListener('scroll', scheduleHeaderUpdate, { passive: true });
+    window.addEventListener('resize', scheduleHeaderUpdate, { passive: true });
   }
 
   function closeMenu(options) {
