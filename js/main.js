@@ -75,6 +75,38 @@
     });
   }
 
+  function initializeMetricsSequence() {
+    var metricsBlock = document.querySelector('.home-main .executive-metrics');
+
+    if (!metricsBlock || !motionAllowed || reducedMotionQuery.matches) {
+      return;
+    }
+
+    if (!('IntersectionObserver' in window)) {
+      metricsBlock.classList.add('is-sequence-visible');
+      return;
+    }
+
+    var sequenceObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.intersectionRatio >= 0.4) {
+          metricsBlock.classList.add('is-sequence-visible');
+          return;
+        }
+
+        if (entry.intersectionRatio <= 0.05) {
+          metricsBlock.classList.remove('is-sequence-visible');
+        }
+      });
+    }, {
+      root: null,
+      rootMargin: '0px 0px -6% 0px',
+      threshold: [0, 0.05, 0.4]
+    });
+
+    sequenceObserver.observe(metricsBlock);
+  }
+
   function initializeHeaderScrollState() {
     if (!siteHeader) {
       return;
@@ -122,6 +154,7 @@
 
   initializeHeroEntrance();
   initializeReveals();
+  initializeMetricsSequence();
   initializeHeaderScrollState();
 
   if (!navToggle || !primaryNav) {
