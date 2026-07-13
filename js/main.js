@@ -63,8 +63,8 @@
     }
 
     var characterIndex = 0;
-    var typingDelay = 380;
-    var characterDelay = 24;
+    var typingDelay = 450;
+    var characterDelay = 20;
     var cursorHold = 450;
 
     typewriter.classList.add('typewriter-ready', 'typing-active');
@@ -82,7 +82,11 @@
       revealButtons();
 
       window.setTimeout(function () {
-        typewriter.classList.add('is-cursor-hidden');
+        typewriter.classList.add('is-cursor-fading');
+
+        window.setTimeout(function () {
+          typewriter.classList.add('is-cursor-hidden');
+        }, 220);
       }, cursorHold);
     }
 
