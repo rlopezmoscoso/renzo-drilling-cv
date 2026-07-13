@@ -74,3 +74,15 @@ The current environment blocked direct binary downloads from external company do
 - Retrieval date: 2026-07-12.
 - Image modification confirmation: No local image was created or modified.
 - Limitations: The official Intergas site could be discovered, but page retrieval through the available web fetcher reported a Unicode decoding error and the local shell proxy blocked direct downloads. The expected logo file remains absent.
+
+## Original project illustration
+
+### Technical drilling and directional well blueprint
+- Filename: `assets/images/hero-drilling-blueprint.svg`.
+- Source: Original project illustration created for this repository.
+- It is not based on confidential well data.
+- It does not depict a real well.
+- It contains no real operational parameters.
+- It may be used as a decorative website asset.
+- Technical structure: viewBox-based SVG with transparent background, accessible `<title>` and `<desc>`, grouped technical grid, land rig, wellhead/BOP stack, casing strings, formation bands, directional J-profile wellbore, drill-bit symbol, and restrained reference-line details.
+- Palette: navy `#102a3a`, petroleum blue `#1f566b`, muted blue-gray `#5b6b73`, border gray `#d3dde1`, and copper accent `#b66a32`.
