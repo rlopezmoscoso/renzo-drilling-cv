@@ -25,6 +25,11 @@
       return;
     }
 
+    heroElements.forEach(function (element) {
+      var delay = Number.parseInt(element.getAttribute('data-reveal-delay') || '0', 10);
+      element.style.setProperty('--reveal-delay', (Number.isNaN(delay) ? 0 : delay) + 'ms');
+    });
+
     window.requestAnimationFrame(function () {
       setVisible(heroElements);
     });
@@ -37,7 +42,7 @@
       return;
     }
 
-    revealElements.forEach(function (element) {
+    document.querySelectorAll('.home-main [data-reveal-delay]').forEach(function (element) {
       var delay = Number.parseInt(element.getAttribute('data-reveal-delay') || '0', 10);
       element.style.setProperty('--reveal-delay', (Number.isNaN(delay) ? 0 : delay) + 'ms');
     });
