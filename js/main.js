@@ -112,18 +112,29 @@
       return;
     }
 
+    var progressBar = siteHeader.querySelector('.scroll-progress-bar');
     var ticking = false;
 
-    function updateHeader() {
-      siteHeader.classList.toggle('is-scrolled', window.scrollY > 32);
+    function updateHeaderAndProgress() {
+      var scrollTop = window.scrollY;
+      var scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      var progress = scrollable > 0 ? scrollTop / scrollable : 0;
+      var clampedProgress = Math.min(Math.max(progress, 0), 1);
+
+      siteHeader.classList.toggle('is-scrolled', scrollTop > 40);
+
+      if (progressBar) {
+        progressBar.style.transform = 'scaleX(' + clampedProgress + ')';
+      }
+
       ticking = false;
     }
 
-    updateHeader();
+    updateHeaderAndProgress();
 
     window.addEventListener('scroll', function () {
       if (!ticking) {
-        window.requestAnimationFrame(updateHeader);
+        window.requestAnimationFrame(updateHeaderAndProgress);
         ticking = true;
       }
     }, { passive: true });
