@@ -64,7 +64,7 @@
 
     var characterIndex = 0;
     var typingDelay = 450;
-    var characterDelay = 20;
+    var characterDelay = 16;
     var cursorHold = 450;
 
     typewriter.classList.add('typewriter-ready', 'typing-active');
